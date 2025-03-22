@@ -1,0 +1,138 @@
+/* Add background image */
+body {
+    background-image: url('your-background.jpg'); /* Change this to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Video Section */
+.video-section {
+    background: rgba(255, 192, 203, 0.5); /* Soft pink transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.birthday-video {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Main container for content */
+.container {
+    background-color: rgba(86, 73, 73, 0.438); /* Soft pink with slight transparency */
+    padding: 30px; 
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgb(248, 182, 182);
+    max-width: 500px;
+    margin: 5px; /* Reduced margin to minimize spacing */
+}
+
+/* Styling for "Dearest Pretty-ta" Section */
+.dearest-section {
+    background: rgba(153, 141, 151, 0.451); /* Light pinkish background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 5px; 
+}
+
+.dearest-section h1 {
+    font-size: 30px;
+    color: #c190a4; /* Soft pink */
+    font-weight: bold;
+    font-family: "Georgia", serif;
+}
+
+/* Heading text */
+.header-text {
+    color: rgb(119, 87, 104);
+    font-size: 36px;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Kaomoji style */
+.kaomoji {
+    font-size: 24px;
+    color: rgb(214, 79, 146); /* Pink */
+}
+
+/* Space for the image */
+.image-space {
+    width: 100%;
+    height: 180px;
+    background-color: rgba(255, 182, 193, 0.5); /* Light pink placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+/* Pink text for titles */
+.pink-text {
+    color: rgb(196, 11, 156);
+    font-size: 20px;
+}
+
+/* Grey text */
+.grey-text {
+    color: rgb(181, 2, 2);
+    font-size: 20px;
+}
+
+/* Fun fact list */
+.birthday-list {
+    list-style-type: "❀ ";
+    text-align: left;
+    display: inline-block;
+}
+
+/* Button */
+button {
+    background-color: #ff69b4; /* Hot pink */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink */
+}
+
+/* Hidden surprise text */
+.hidden-surprise {
+    display: none;
+    font-size: 22px;
+    color: #ff69b4;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ASCII art styling */
+.ascii-art {
+    font-size: 16px;
+    color: rgb(255, 20, 147);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/* Bounce effect for heading */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}

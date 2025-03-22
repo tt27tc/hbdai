@@ -50,21 +50,21 @@ body {
 .dearest-section h1 {
     font-size: 30px;
     color: #c190a4; /* Soft pink */
-    font-weight: bold;
+    font-weight: ;
     font-family: "Georgia", serif;
 }
 
 /* Heading text */
 .header-text {
     color: rgb(119, 87, 104);
-    font-size: 36px;
+    font-size: 23px;
     animation: bounce 1s infinite alternate;
 }
 
 /* Kaomoji style */
 .kaomoji {
     font-size: 24px;
-    color: rgb(214, 79, 146); /* Pink */
+    color: rgb(0, 0, 0); /* Pink */
 }
 
 /* Space for the image */
@@ -87,7 +87,7 @@ body {
 
 /* Grey text */
 .grey-text {
-    color: rgb(181, 2, 2);
+    color: rgb(13, 13, 13);
     font-size: 20px;
 }
 
@@ -117,10 +117,10 @@ button:hover {
 /* Hidden surprise text */
 .hidden-surprise {
     display: none;
-    font-size: 22px;
-    color: #ff69b4;
+    font-size: 18px;
+    color: #000000;
     margin-top: 10px;
-    font-weight: bold;
+    font-weight: ;
 }
 
 /* ASCII art styling */

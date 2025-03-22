@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dearest</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(132, 149, 167);
+            font-family: "", cursive;
+        }
+        .image-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-space img {
+    max-width: 40%; /* Limits image width to 80% of the container */
+    height: auto;  /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 0 5px rgba(128, 46, 46, 0.2); /* Optional shadow */
+}
+
+        .container {
+            display: none;
+            margin: auto;
+            padding: 20px;
+            max-width: 600px;
+            background: rgb(249, 224, 224);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-top: 20%;
+            background: rgba(255, 255, 255, 0.533);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #ca8ba2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ff3385;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- New Section for "Dearest Pretty-ta" -->
+    <div class="dearest-section">
+        <h1>Dearest "Pretty-ta"</h1>
+    </div>
+
+    <!-- Audio Player (Hidden) -->
+    <audio id="birthdaySong" src="https://github.com/tt27tc/super-duper-lamp/blob/main/assets/music/YDAO.mp3"></audio>
+
+    <div id="question1" class="question">
+        <h2></h2>
+        <h2>Dost thou graciously accept <br> this humble token of mine,<br><br>  as this day <br> be the twenty-third <br> of March <br><br> in the year of our Lord <br>two thousand and twenty-five?
+        </h2>
+        <button onclick="playSong(); nextQuestion();">はい</button>
+    </div>
+
+    <div id="question2" class="question" style="display: none;">
+        <h2>Are you listening to it?</h2>
+        <button onclick="showIntro()">はい</button>
+    </div>
+
+    <div id="intro" class="question" style="display: none;">
+        <h2>Wholeheartedly,</h2>
+        <button onclick="showBirthdayPage()">otanjōbiomedetō!</button>
+    </div>
+
+    <div id="birthdayPage" class="container">
+        <div class="image-space">
+            <img src="file:///Users/macsierra/Downloads/Ai.png" alt="Prettyta Chibi style">
+        </div>
+        
+        <h2 class="pink-text"> <br>A letter for your 26th</h2>
+        
+ 
+        <button onclick="showSurprise()"> ｡ ₊°༺❤︎༻°₊ ｡ </button>
+        <p class="hidden-surprise" style="display: none;"> Many are the friends I see <br> yet in my sight <br> No friend like thee <br> I know that friendship <br> 
+        like ours lasts <br> Not because I don't have a choice <br> but because in us <br>I trust <br> <br> And by the time we age <br> and greet each other <br> candles in line of 8 
+        <br> or even in the heaven gates... <br> may our bond still remain <br>
+        But now we're young still <br> skin glowing and smiling in grace <br> Let us cherish the moment <br> and keep stacking new memories <br> Happy, happy birthday. <br><br>
+        Thank you for every little thing.<br> Though not by blood, <br> you're my ate <br>
+    one that I didn't know<br> I so dearly needed.<br>My first friend<br>My first roommate<br>And my first inspiration as a kid<br>The most pretty tita ever...<br>by face...<br>
+and by heart.<br>Godspeed to your journeys ahead.</p> 
+   
+         <!-- Video Section (Now Separate) -->
+         <div class="video-section">
+            <h2 class="pink-text"> </h2>
+            <video class="birthday-video" autoplay loop muted controls>
+                <source src="https://raw.githubusercontent.com/tt27tc/vidaichai/main/AiChai.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <h2 class="pink-text"> <br>I love you, Tita Ai!</h2>
+
+    </div>
+    
+
+    
+
+
+
+
+    <script>
+        function playSong() {
+            let song = document.getElementById("birthdaySong");
+
+            // Start playing from 48 seconds
+            song.currentTime = 48;
+            song.play();
+
+            // Stop at 1:40 (100 seconds)
+            setTimeout(() => {
+                song.pause();
+            }, 52000); // 100s - 48s = 52,000ms
+        }
+
+        function nextQuestion() {
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2').style.display = 'block';
+        }
+
+        function showIntro() {
+            document.getElementById('question2').style.display = 'none';
+            document.getElementById('intro').style.display = 'block';
+        }
+
+        function showBirthdayPage() {
+            document.getElementById('intro').style.display = 'none';
+            document.getElementById('birthdayPage').style.display = 'block';
+        }
+
+        function showSurprise() {
+            document.querySelector('.hidden-surprise').style.display = 'block';
+        }
+    </script>
+
+<audio controls>
+    <source src="https://raw.githubusercontent.com/tt27tc/nikiai/main/NIKI%20(online-audio-converter.com)%20(1).mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let audio = document.getElementById("birthdaySong");
+
+        // Set start time when user clicks play
+        audio.addEventListener("play", function () {
+            audio.currentTime = 48; // Start at 00:48
+        });
+
+        // Stop audio at 1:40
+        audio.addEventListener("timeupdate", function () {
+            if (audio.currentTime >= 100) { // 1:40 is 100 seconds
+                audio.pause();
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
